@@ -49,8 +49,8 @@ def song_stats_from_csv(input_filepath):
 			writer.writerow(song.values())
 		
 if __name__ == "__main__":
-	parser = argparse.ArgumentParser(description='Add audio features to .csv')
-	parser.add_argument('input_file', help='input file in .csv format')
+	parser = argparse.ArgumentParser(description='Get songs stats from waf.csv')
+	parser.add_argument('input_file', help='input file in waf.csv format')
 	args = parser.parse_args()
 
 	song_stats_from_csv(args.input_file)
