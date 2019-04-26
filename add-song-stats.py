@@ -48,7 +48,7 @@ def song_stats_from_csv(input_filepath):
 				songs_array.append(aux)
 
 	for song in songs_array:
-		song['S'] = int(round(song['V']*100/max_value[song['Y']] , 0))
+		song['S'] = int(round(song['V']*100/max_value[song['Y']]/10 , 0))
 
 	with open(output_filepath, 'w') as csv_output:
 
